@@ -7,7 +7,7 @@ export default function App() {
 
   return (
     <div style={{ maxWidth: 800, margin: "0 auto", padding: "2rem" }}>
-      <h1>🧠 Crux - Chat with your PDF</h1>
+      <h1>🧠 Crux - Chat with your PDF and get amazed</h1>
       <UploadBox onUploadSuccess={() => setIsUploaded(true)} />
       {isUploaded && <ChatBox />}
     </div>
