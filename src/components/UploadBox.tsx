@@ -16,7 +16,7 @@ export default function UploadBox({ onUploadSuccess }: UploadBoxProps) {
 
     try {
       setStatus("Uploading...");
-      const res = await fetch(import.meta.env.VITE_API_URL + "/upload", {
+      const res = await fetch("https://cruxws.onrender.com/api/v1" + "/upload", {
         method: "POST",
         body: formData,
       });
