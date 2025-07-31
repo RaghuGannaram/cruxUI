@@ -16,7 +16,7 @@ export default function UploadBox({ onUploadSuccess }: UploadBoxProps) {
 
     try {
       setStatus("Uploading...");
-      const res = await fetch("http://localhost:5000/api/v1/upload", {
+      const res = await fetch(import.meta.env.VITE_API_URL + "/upload", {
         method: "POST",
         body: formData,
       });
